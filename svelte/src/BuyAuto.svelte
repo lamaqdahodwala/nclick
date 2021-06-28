@@ -19,6 +19,6 @@
     }
 </script>
 
-<button on:click={buy}>
+<button on:click={buy} class="button is-{$pts >= price ? 'success' : 'warning'}">
     Buy {name} for {price}
 </button>
