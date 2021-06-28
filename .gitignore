@@ -1,2 +1,5 @@
 .idea
 .vscode
+
+svelte/public/build
+svelte/node_modules
