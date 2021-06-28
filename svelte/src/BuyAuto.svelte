@@ -10,13 +10,15 @@
     function buy(){
         if ($pts >= price){
             pts.set(($pts - price))
-            clicksps.set($clicksps + amount)
+            clicksps.set($clicksps + parseInt(amount))
+            // alert($pts)
+            // alert($clicksps)
         } else {
             alert("You can't buy this!")
         }
     }
 </script>
 
-<button>
+<button on:click={buy}>
     Buy {name} for {price}
 </button>
