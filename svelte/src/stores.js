@@ -1,4 +1,4 @@
 import { writable } from 'svelte/store'
 
-pts = writable(0)
-clicksps = writable(0)
+export let pts = writable(0)
+export let clicksps = writable(0)
