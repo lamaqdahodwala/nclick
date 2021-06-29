@@ -28,6 +28,15 @@
 		<div class="tile is-parent">
 			<article class="tile is-child box">
 				<ul>
+					<BuyAuto name='yeet' amount='1' price='15'/>
+					<br>
+					<br>
+					<BuyAuto name='yeet' amount='1' price='15'/>
+					<br>
+					<br>
+					<BuyAuto name='yeet' amount='1' price='15'/>
+					<br>
+					<br>
 				</ul>
 			</article>
 		</div>
@@ -37,6 +46,7 @@
 			<article class="tile is-child box">
 				<h1 class="title">Points: {$pts}</h1>
 				<h3 class="subtitle">CPS: {$clicksps}</h3>
+				<button class='button is-info' on:click={buttonClick}>Click for points</button>
 			</article>
 		</div>
 	</div>
