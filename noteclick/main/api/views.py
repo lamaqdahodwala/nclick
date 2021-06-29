@@ -18,6 +18,7 @@ class GetGameData(APIView):
 
 class CreateNewGame(APIView):
     http_method_names = ["POST"]
+
     def post(self, req):
         if req.user.is_authenticated:
             game = Game()
