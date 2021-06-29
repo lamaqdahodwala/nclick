@@ -13,3 +13,8 @@ class GetGameData(APIView):
         game = get_object_or_404(Game, user=req.user)
         ser = GameSerializer(game)
         return Response(ser.data)
+
+class CreateNewGame(APIView):
+    http_method_names = ['POST']
+    def post(self, req):
+        game = Game()
