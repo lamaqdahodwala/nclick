@@ -4,5 +4,5 @@ from django.db import models
 # Create your models here.
 class Game(models.Model):
     user = models.ForeignKey(django.contrib.auth.models.User, on_delete=models.CASCADE)
-    total = models.IntegerField()
+    points = models.IntegerField()
     cps = models.IntegerField()
