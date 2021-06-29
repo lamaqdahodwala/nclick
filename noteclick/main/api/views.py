@@ -10,11 +10,16 @@ class GetGameData(APIView):
     http_method_names = ["GET"]
 
     def get(self, req):
-        game = get_object_or_404(Game, user=req.user)
-        ser = GameSerializer(game)
-        return Response(ser.data)
+        if req.user.is_authenticated:
+            game = get_object_or_404(Game, user=req.user)
+            ser = GameSerializer(game)
+            return Response(ser.data)
+
 
 class CreateNewGame(APIView):
-    http_method_names = ['POST']
+    http_method_names = ["POST"]
+
     def post(self, req):
-        game = Game()
+        if req.user.is_authenticated:
+            game = Game()
+            game.user = req.user
