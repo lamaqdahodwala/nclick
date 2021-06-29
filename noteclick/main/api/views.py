@@ -23,3 +23,4 @@ class CreateNewGame(APIView):
         if req.user.is_authenticated:
             game = Game()
             game.user = req.user
+            game.save()
