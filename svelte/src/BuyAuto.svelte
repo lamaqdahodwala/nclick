@@ -10,9 +10,8 @@
         if ($pts < cost){
             modalOpen = true
         } else {
-            pts.update($pts - cost)
-            cps.update($cps + amount)
-
+            pts.update(n => n-cost)
+            cps.update(n => n+parseInt(amount))
         }
     }
 </script>
