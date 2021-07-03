@@ -19,12 +19,14 @@
 
 <main>
 	<div class="container">
-		<h1 class="title">{$pts}</h1>
-		<h1 class="subtitle">{$cps}</h1>
+		<div class="card is-fluid has-text-centered">
+			<h1 class="title">{$pts}</h1>
+			<h1 class="subtitle">{$cps}</h1>
+		</div>
 		<br><br>
-		<Button on:click={handleClick} outlined filled >Click for pts</Button>
-		<br><br>
-		<BuyAuto name='yeet' amount=15 cost=1/>
+			<Button on:click={handleClick} outlined filled >Click for pts</Button>
+			<br><br>
+			<BuyAuto name='yeet' amount=15 cost=1/>
 	</div>
 </main>
 
