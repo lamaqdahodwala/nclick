@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    {% block content %} 
+    {% load django_svelte %} 
 
-    {% endblock %}
+    {% display_svelte 'App.svelte' %} 
 </body>
 </html>
