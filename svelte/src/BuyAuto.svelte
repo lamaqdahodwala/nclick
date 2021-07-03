@@ -17,12 +17,13 @@
 </script>
 
 <main>
-    <Button on:click={purchaseAuto}>
-        Buy {name} from {cost}
+    <Button on:click={purchaseAuto} outline noRipple>
+        Buy {name} for {cost}
     </Button>
     <Modal bind:open={modalOpen} let:closeCallback>
         <Dialog title="You can't buy this!" {closeCallback}>
             Save up {cost-$pts} to buy this.
         </Dialog>
     </Modal>
+    <br><br>
 </main>
