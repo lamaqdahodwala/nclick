@@ -19,14 +19,27 @@
 
 <main>
 	<div class="container">
-		<div class="card is-fluid has-text-centered">
+		<div class="box has-text-centered">
 			<h1 class="title">{$pts}</h1>
 			<h1 class="subtitle">{$cps}</h1>
+			<br>
 		</div>
 		<br><br>
-			<Button on:click={handleClick} outlined filled >Click for pts</Button>
-			<br><br>
-			<BuyAuto name='yeet' amount=15 cost=1/>
+		<div class="is-flex is-justify-content-center">
+			<Button on:click={handleClick} outlined filled rectangle>Click for pts</Button>
+		</div>
+		<br>
+		<div class="columns">
+			<div class="column">
+				<div class="box is-flex is-flex-direction-column">
+					<BuyAuto name='yeet' amount=15 cost=1/>
+					<BuyAuto name='yeet' amount=15 cost=1/>
+					<BuyAuto name='yeet' amount=15 cost=1/>
+					<BuyAuto name='yeet' amount=15 cost=1/>
+					<BuyAuto name='yeet' amount=15 cost=1/>
+				</div>
+			</div>
+		</div>
 	</div>
 </main>
 

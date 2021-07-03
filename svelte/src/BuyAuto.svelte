@@ -17,7 +17,7 @@
 </script>
 
 <main>
-    <Button on:click={purchaseAuto} outline noRipple>
+    <Button on:click={purchaseAuto} outline>
         Buy {name} for {cost}
     </Button>
     <Modal bind:open={modalOpen} let:closeCallback>
@@ -25,5 +25,5 @@
             Save up {cost-$pts} to buy this.
         </Dialog>
     </Modal>
-    <br><br>
+    <br>
 </main>
