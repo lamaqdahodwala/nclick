@@ -1,3 +1,4 @@
+from django.http.response import HttpResponseRedirect
 from .serializers import GameSerializer
 from ..models import Game
 from rest_framework.response import Response
@@ -15,3 +16,5 @@ class GetGameDataView(APIView):
 
             ser = GameSerializer(game)
             return Response(ser.data)
+        else:
+            return HttpResponseRedirect('/')
