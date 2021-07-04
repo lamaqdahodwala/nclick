@@ -25,7 +25,10 @@ SECRET_KEY = "django-insecure-a_x_=jh9u-#w96(giq_zjn=%d-6o(wcr0to1wpqy5lwoa((01w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'noteclick.herokuapp.com'
+]
 
 
 # Application definition
