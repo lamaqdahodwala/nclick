@@ -9,10 +9,9 @@ class GetGameDataView(APIView):
     def get(self, req):
         if req.user.is_authenticated:
             try:
-                game : Game = Game.objects.get(user=req.user)
+                game: Game = Game.objects.get(user=req.user)
             except:
                 game = Game.objects.create(user=req.user)
 
             ser = GameSerializer(game)
             return Response(ser.data)
-                
