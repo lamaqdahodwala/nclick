@@ -1,1 +1,0 @@
-web: cd noteclick && gunicorn noteclick.wsgi
