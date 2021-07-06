@@ -23,6 +23,5 @@ urlpatterns = [
     path("", include("main.urls")),
     path('api/v1/', include('main.api.urls')),
     path('account/', include('accounts.urls')),
-    path('account/', include('django.contrib.auth.urls')),
-    static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('account/', include('django.contrib.auth.urls'))
 ]
