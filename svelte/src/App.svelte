@@ -18,6 +18,7 @@
 </script>
 
 <main>
+	<br><br>
 	<div class="container">
 		<div class="box has-text-centered">
 			<h1 class="title">{$pts}</h1>
@@ -38,6 +39,9 @@
 					<BuyAuto name='yeet' amount=15 cost=1/>
 					<BuyAuto name='yeet' amount=15 cost=1/>
 				</div>
+			</div>
+			<div class="column">
+				<div class="box is-fluid"></div>
 			</div>
 		</div>
 	</div>
